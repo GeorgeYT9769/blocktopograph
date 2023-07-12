@@ -127,7 +127,7 @@ public class WorldItemListActivity extends AppCompatActivity implements MenuHelp
                         if(levelIndex >= 0 && path.endsWith(levelDat))
                             path = path.substring(0, levelIndex);
 
-                        String defaultPath = Environment.getExternalStorageDirectory().toString()+"/games/com.mojang/minecraftWorlds/";
+                        String defaultPath = Environment.getExternalStorageDirectory().toString()+"/Android/data/com.mojang.minecraftpe/files/games/com.mojang/minecraftWorlds/";
                         File worldFolder = new File(path);
                         String errTitle = null, errMsg = String.format(getString(R.string.report_path_and_previous_search), path, defaultPath);
                         if(!worldFolder.exists()){
